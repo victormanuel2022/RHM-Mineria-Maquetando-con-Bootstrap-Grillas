@@ -1,3 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------.....................-BODY------.................--------- */
+
+
+
+
+  
+
+  .consultoria {
+
+    grid-area: consultoria;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+  .contratista {
+
+    grid-area: contratista;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0 ;
+
+}
+
+  .tecnologia {
+
+    grid-area: tecnologia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  .capacitacion {
+
+    grid-area: capacitacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.main h2{
+    margin: 60px 0 0 0;
+    position: relative;
+    left: 40vw;
+    color: rgb(0, 32, 96);
+}
+
+
+.main img{
+    width: 250px;
+    height: 290px;
+    border-radius: 10%;
+    padding: 1px;
+    box-shadow: 0 10px 10px gray;
+    cursor: pointer;
+
+
+}
+
+
+
+/* ------------------------------FOOTER-------------------------- */
+.footer{
+    width: auto;
+    height: 100px;
+}
+
+ .footer div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gray;
+    height: 100px;
+}
+
+
+
+
+
+
+/* CONTRATISTA */
+
+
+.mainContratista{
+    width: auto;
+    height: 540px;
+}
+
+
+.grillaContratista {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.55fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "desarrollo explotacion contrat fabricacion";
+
+    color: rgb(0, 32, 96);
+    margin: 40px 0 0 0 ;
+  }
+
+  .grillaContratista p{
+      width: 250px;
+  }
+
+  .desarrollo {
+    grid-area: desarrollo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+  .explotacion {
+    grid-area: explotacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+  .contrat {
+    grid-area: contrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  .fabricacion {
+    grid-area: fabricacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.mainContratista img{
+    width: 250px;
+    border-radius: 10%;
+    padding: 1px;
+    box-shadow: 0 10px 10px gray;
+}
+
+.mainContratista p{
+    width: 250px;
+}
+
+
+
+.mainContratista h2{
+    margin: 60px 0 0 0;
+    position: relative;
+    left: 40vw;
+    color: rgb(0, 32, 96);
+}
+
+
+/* CONSULTORIA */
+
+.consultoriaMain{
+    height: 540px;
+    width: auto;
+}
+
+.consultoriaMain h2{
+    margin: 60px 0;
+    position: relative;
+    left: 40vw;
+    color: rgb(0, 32, 96);
+}
+
+.consultoriaSection{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.consultoriaSection p{
+    width: 30vw;
+}
+.consultoriaSection img{
+    height: 300px;
+    width: 400px;
+}
+
+.consultoriaSection article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+}
+
+/* TECNOLOGIA */
+.mainTecnologia{
+    height: 540px;
+    width: auto;
+}
+
+.mainTecnologia h2{
+    color: rgb(0, 32, 96);
+    margin: 60px 0;
+    position: relative;
+    left: 30vw;
+}
+
+.mainTecnologia img{
+    margin: 10px 0;
+    position: relative;    
+    height: 375px;    
+}
+
+.mainTecnologia div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.mainTecnologia p{
+    width: 500px;
+}
+
+/* CAPACITACION */
+.capacitacionMain{
+    width: auto;
+}
+
+.capacitacionMain div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.capacitacionMain article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capacitacionMain h2{
+    margin: 60px 0 60px 0;
+    position: relative;
+    left: 40vw;
+    color: rgb(0, 32, 96);
+}
+
+.capacitacionMain img{
+    margin: 30px 30px;
+}
+
+
+
+/* CONTACTANOS */
+.mainContactanos{
+    width: 1280px;
+}
+
+.mainContactanos h2{
+    margin: 60px 0 60px 0;
+    position: relative;
+    left: 350px;
+    color: rgb(0, 32, 96);
+}
+
+.mainContactanos div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccionContactanos form{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+        
+}
+.consulta{
+    height: 300px;
+}
+
+.seccionContactanos{
+    padding: 5px;
+}
+
+/* ----------------------------------RESPONSIVE-------------- */
+
+
+@media(max-width:1024px){
+
+/* Contratista */
+
+    .grillaContratista {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.55fr 0.55fr;
+        gap: 0px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "desarrollo explotacion"
+          "contrat fabricacion";
+
+        color: rgb(0, 32, 96);
+        margin: 40px 0 0 0 ;
+      }
+
+      .mainContratista{
+          height: 750px;
+      }
+
+      .fabricacion h3{
+          width: 270px;
+
+      }
+
+      .mainContratista h2{
+          position: relative;
+          left: 130px;
+      }
+
+
+
+  
+
+ 
+  /* Consultoría */
+ 
+
+    .consultoriaMain h2{   
+        position: relative;
+        left: 20vw;
+    }
+
+
+    .consultoriaSection p{
+        width: 200px;
+        position: relative;
+        left: 15px;
+    }
+    .consultoriaSection img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .consultoriaSection{
+        position: relative;
+        left: -50px;
+        
+    }
+
+   
+    /* contactanos */
+
+    .mainContactanos{
+        height: auto;
+    }
+
+
+    .mainContactanos h2{
+        position: relative;
+        left: 80px;
+        width: 40vw;
+    }
+
+    .mainContactanos div{
+        flex-direction: column;
+    }
+
+    .mainContactanos iframe{
+        width: 50vw;
+        height: 20vh;
+        position: relative;
+        left: 12px;
+        border-radius: 50%;
+        
+    }
+
+    .mainContactanos h3{
+        position: relative;
+        left: 22vw;
+    }
+
+    .seccionContactanos h3{
+        position: relative;
+        left: 15vw;
+    }
+
+    .seccionContactanos form{
+        width: 45vw;
+        position: relative;
+        left: 30px;
+    }
+
+    /* tecnología */
+
+    .mainTecnologia{
+        height: auto;
+    }
+    .mainTecnologia h2{
+        position: relative;
+        left: 60px;
+        width: 40vw;
+    }
+
+    .mainTecnologia p{
+        position: relative;
+        left: -170px;
+        width: 40vw;
+    }
+    .mainTecnologia img{
+        position: relative;
+        left: -180px;
+        width: 300px;
+    }
+
+    
+
+   
+
+}
+
+
+@media(max-width:768px){
+    /* -------------INDEX ---------------*/
+
+   
+
+
+    /*index*/
+
+    
+
+      .main{
+
+        height: 2000px;
+        width: 80vw;
+    }
+
+    .main h2{
+        left: 20px;
+
+    }
+
+    
+
+
+    /* footer */
+    .footer img{
+        width: auto;
+        height: 15px;
+    }
+
+    .footer p{
+        font-size: 5px;
+        color: rgb(0, 32, 96);
+    }
+
+    .footer{
+        height: 20px;
+    }
+
+     .footer div{
+        height: 20px;
+    }
+
+     /* contratista*/
+
+      .grillaContratista {  display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: 0.55fr 0.55fr 0.55fr 0.55fr;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "desarrollo"
+          "explotacion"
+          "contrat"
+          "fabricacion";
+
+        color: rgb(0, 32, 96);
+        margin: 40px 0 0 0 ;
+
+      }
+
+      .mainContratista{
+
+        height: 2000px;
+        width: 100vw;
+    }
+
+    .mainContratista h2{
+        left: 20px;
+        margin: 60px 100px 0 10px;
+        position: relative;
+        left: 30px;
+    }
+
+    .fabricacion h3{
+        width: 60vw;
+    }
+
+    .grillaContratista p{
+        margin: 10px 0 0 0;
+    }
+
+    /* consultoría */
+
+    .consultoriaMain h2{
+        position: relative;
+        left: 5px;
+               
+    }
+
+    .consultoriaSection{
+        flex-direction: column;
+        position: relative;
+        left: 10px;
+        
+    }
+
+    .consultoriaMain{
+        height: auto;
+    }
+
+    .consultoriaSection article{
+        padding: 30px 0;
+    }
+
+    /* capacitación */
+
+    .capacitacionMain h2{
+        position: relative;
+        left: 80px;
+    }
+
+      /* contactanos */
+
+      
+    .mainContactanos h2{
+        position: relative;
+        left: 80px;
+        width: 70vw;
+    }
+    
+    .mainContactanos iframe{
+        width: 80vw;
+        height: 20vh;
+        position: relative;
+        left: 23px;
+        border-radius: 50%;
+        
+    }
+
+    .mainContactanos h3{
+        position: relative;
+        left: 35vw;
+    }
+
+    .seccionContactanos h3{
+        position: relative;
+        left: 25vw;
+    }
+
+    .seccionContactanos form{
+        width: 75vw;
+        position: relative;
+        left: 35px;
+    }
+    
+     /* tecnología */
+
+  
+    
+     .mainTecnologia h2{
+        position: relative;
+        left: 60px;
+        width: 35vw;
+    }
+
+    .mainTecnologia p{
+        position: relative;
+        left: -65px;
+        width: 35vw;
+    }
+    .mainTecnologia img{
+        position: relative;
+        left: -75px;       
+        width: 150px;
+        height: 170px;
+    }
+
+
+
+}
+
+
+@media(max-width:425px){
+    /* -------------INDEX ---------------*/
+
+  
+  
+
+    
+
+    /* -------------CONTRATISTA ---------------*/
+
+    .mainContratista{
+        height: 2000px;
+    }
+    .grillaContratista img{
+        height: 290px;
+        width: 350px;
+        margin: 0 -45px 0 0px;
+    }
+
+    .grillaContratista p{
+        width: 350px;
+        margin: 15px -45px 0 0px;
+        font-size: 21px;
+    }
+
+    /* consultoría */
+    .consultoriaMain h2{
+        width: 90vw;
+        position: relative;
+        left: 35px;
+    }
+
+     /* capacitación */
+
+     .capacitacionMain h2{
+        position: relative;
+        left: 40px;
+    }
+
+    .capacitacionMain div{
+        position: relative;
+        left: 65px;
+    }
+
+     /* contactanos */
+
+      
+     .mainContactanos h2{
+        position: relative;
+        left: 50px;
+        width: 80vw;
+    }
+    
+    .mainContactanos iframe{
+        width: 90vw;
+        height: 20vh;
+        position: relative;
+        left: 23px;
+        border-radius: 50%;
+        
+    }
+
+    .mainContactanos h3{
+        position: relative;
+        left: 40vw;
+    }
+
+    .seccionContactanos h3{
+        position: relative;
+        left: 25vw;
+    }
+
+    .seccionContactanos form{
+        width: 82vw;
+        
+    }
+
+    /* tecnología */
+
+  
+    
+    .mainTecnologia h2{
+        position: relative;
+        left: 20px;
+        width: 40vw;
+    }
+
+    .mainTecnologia p{
+        position: relative;
+        left: -95px;
+        width: 35vw;
+    }
+    .mainTecnologia img{
+        position: relative;
+        left: -100px;
+        width: 130px;
+        height: 130px;
+        
+    }
+
+
+   
+
+    
+}
+
+
+/* css para bootstrap */
 .fondoHeader{
     background-color: rgb(0,32,96);
+}
+
+.textoBarrasuperior{
+    font-size: 13px;
 }
